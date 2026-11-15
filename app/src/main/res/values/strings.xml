@@ -1,4 +1,5 @@
 <resources>
+    <string name="app_name">Losowy Wybór</string>
     <string name="header_main">Losowy Wybór</string>
     <string name="hint_item">Wpisz opcję...</string>
     <string name="btn_add">Dodaj</string>
