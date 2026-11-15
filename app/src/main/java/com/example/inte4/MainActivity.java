@@ -64,14 +64,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnDraw.setOnClickListener(v -> {
-            // Zabezpieczenie przed pustą listą (komunikat zamiast awarii)
+
             if (itemsList.isEmpty()) {
                 Toast.makeText(this, R.string.error_empty_list, Toast.LENGTH_SHORT).show();
                 return;
             }
 
             Intent intent = new Intent(MainActivity.this, ResultActivity.class);
-            // Przekazanie tablicy napisów String[] przez putExtra
+
             String[] itemsArray = itemsList.toArray(new String[0]);
             intent.putExtra(EXTRA_ITEMS, itemsArray);
             resultLauncher.launch(intent);

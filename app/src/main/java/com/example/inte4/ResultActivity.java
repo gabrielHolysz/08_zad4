@@ -25,7 +25,7 @@ public class ResultActivity extends AppCompatActivity {
         Button btnRedraw = findViewById(R.id.btnRedraw);
         Button btnChoose = findViewById(R.id.btnChoose);
 
-        // Odbieranie tablicy napisów przez getStringArrayExtra
+
         if (getIntent() != null && getIntent().hasExtra(MainActivity.EXTRA_ITEMS)) {
             items = getIntent().getStringArrayExtra(MainActivity.EXTRA_ITEMS);
         }
@@ -34,14 +34,14 @@ public class ResultActivity extends AppCompatActivity {
             drawRandom();
         }
 
-        // Losowanie ponowne na miejscu
+
         btnRedraw.setOnClickListener(v -> {
             if (items != null && items.length > 0) {
                 drawRandom();
             }
         });
 
-        // Zwrócenie wylosowanego wpisu na ekran pierwszy
+
         btnChoose.setOnClickListener(v -> {
             Intent resultIntent = new Intent();
             resultIntent.putExtra(MainActivity.EXTRA_SELECTED, currentSelected);
