@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
                 if (result.getResultCode() == RESULT_OK && result.getData() != null) {
                     String selectedItem = result.getData().getStringExtra(EXTRA_SELECTED);
                     if (selectedItem != null && !selectedItem.isEmpty()) {
-                        // Pokazanie wybranego wpisu w Snackbarze po powrocie
                         Snackbar.make(findViewById(R.id.main),
                                 getString(R.string.selected_snack, selectedItem),
                                 Snackbar.LENGTH_LONG).show();
