@@ -1,0 +1,16 @@
+<resources>
+    <string name="header_main">Losowy Wybór</string>
+    <string name="hint_item">Wpisz opcję...</string>
+    <string name="btn_add">Dodaj</string>
+    <string name="btn_draw">Losuj</string>
+    <string name="label_list">Lista opcji:</string>
+
+    <string name="header_result">Wynik losowania</string>
+    <string name="btn_redraw">Losuj ponownie</string>
+    <string name="btn_choose">Wybieram to</string>
+    <string name="error_empty_list">Lista opcji jest pusta! Dodaj przynajmniej jedną pozycję.</string>
+    <string name="error_empty_input">Pole tekstowe jest puste!</string>
+
+    <string name="result_format">Wylosowano:\n%1$s\n\nLiczba wszystkich opcji: %2$d</string>
+    <string name="selected_snack">Wybrano: %1$s</string>
+</resources>
